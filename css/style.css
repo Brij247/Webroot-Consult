@@ -1,0 +1,401 @@
+body{
+    height: auto;
+    font-family: 'poppins' sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background: white;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+}
+.flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+header nav .left a{
+    color: black;
+    text-decoration: none;
+    height: 8px;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+    text-transform: bold;   
+}
+header nav .left a{
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+header nav .left a:hover{
+    padding: 10px 10px;
+    background: black;
+    color: white;
+    transition: all .1s ease;
+    transition-duration: 200ms;
+    transition: all .3s ease-out;
+    box-shadow: 0 10px 36px rgb(187, 181, 181);
+}
+header .CompanyLogo{
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+.CompanyLogo .right{
+    margin-top: 90px;
+    transition: all .5s ease-in;
+    transition-duration: 1000ms;
+    
+}
+.CompanyLogo .right h4{
+    margin-bottom: 1rem;
+}
+.CompanyLogo .right h1{
+    margin-bottom: 1rem;
+}
+.CompanyLogo .right p{
+    line-height: 1.9;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+.btn-secondary{
+    background: transparent;
+    color: black;
+    border-color: black;
+
+}
+.btn-secondary:hover{
+    box-shadow: 0 20px 46px black;
+    background: black;
+    color: white;
+    transition: all .5s ease-out;
+    transition-duration: 700ms;
+}
+.btn.btn-primary{
+    margin-top: 2rem;
+    background: transparent;
+    color: black;
+    border-color: black;
+
+}
+.btn.btn-primary:hover{
+    background: gray;
+    color: white;
+    transition: all .5s ease-out;
+    transition-duration: 500ms;
+    box-shadow: 0 20px 46px grey;
+
+}
+section.about .doodle{
+    height: 400px;
+    margin-bottom: 9rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+section.about .right h1{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+
+}
+section.about .right h3{
+    margin-top: 1rem;
+}
+section.about .right p{
+    line-height: 1.9;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+section .right{
+    padding-left: 80px;
+   
+
+}
+section.about .right:hover{
+    transition: all .5s ease;
+    transition-duration: 1000ms;
+}
+
+section.about .social{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    
+}
+
+section.about p{
+    font-family: sans-serif;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+section.about .social a{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.about .social a img{
+
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+section.about .social a:hover{
+    background-color: rgb(168, 161, 161);
+    transition: all .3s ease;
+}
+
+.section-heading{
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    line-height: 0.5;
+}
+.section-heading + p{
+    color: black;
+    margin-bottom: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+section.services{
+    background: lightgrey;
+    padding: 50px;
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin-left: 5rem;
+}
+section.services .card-wrapper .card{
+    background: white;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+}
+
+section.services .card-wrapper .card:hover{
+    background-color: rgb(26, 27, 27);
+    transition: all .3s ease;
+    color: white;
+    transition-duration: 500ms;
+    box-shadow: 0 20px 46px black;
+}
+section.services .card-wrapper .card:hover::after{
+    transition-duration: 500ms;
+}
+section.services .card-wrapper .card p{
+    
+    margin-top: 1rem;
+}
+
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    right: 50%;
+    transform: translate(50%);
+    background-color: rgb(218, 218, 218);
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.services .card-wrapper .card img:hover{
+    background-color: white;
+    text-shadow: black;
+    transition: all .3s ease;
+    transition-duration: 500MS;
+}    
+section.services .card-wrapper .card h2{
+    text-align: center;
+    margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+section.services .container{
+    padding: 100px;
+}
+section.products .container{
+    padding: 100px;
+    padding-right: 2rem;
+
+}
+.section-heading-2{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.section-heading-2 +p{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.DYK{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+section.products .pro-img{
+    padding: 0 15px;
+    text-align: center;
+}
+section.products .container .h4{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+section.products .know{
+    padding: 0;
+    text-align: center;
+    
+}
+section.products .know img{
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    transform: 50%;
+    box-shadow: 0 20px 46px darkgrey;
+    
+}
+section.products .pro-img img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    transform: 50%;
+    
+}
+section.products .pro-img img:hover{
+    transition: all .3s ease-out;
+    box-shadow: 0 20px 46px rgb(49, 48, 48);
+}
+section.products .know img:hover{
+    transition: all .3s ease-out;
+    box-shadow: 0 20px 46px rgb(49, 48, 48);
+}
+section.contact{
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    line-height: 2rem;
+}
+section.contact .mail{
+    display: flex;
+    text-align: center;
+    column-gap: 2rem;
+    -ms-flex-align: center;
+}
+section.contact .connect h1{
+    text-align: center;
+}
+
+section.contact p{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-left: 3rem;
+    grid-gap: 3rem;
+   
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-top: 2rem;
+    
+}
+section.contact .card-wrapper .card h6{
+    color: dimgray;
+    font-size: 10px;
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    
+}
+section.contact .input-wrap input{
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background: gainsboro;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+section.contact .input{
+    padding: 0.5rem;
+    
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid rgb(39, 43, 46);
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: gainsboro;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid rgb(39, 43, 46);
+    font-size: 1rem;
+    background: gainsboro;
+}
+section.contact .container{
+    padding: 100px;
+    padding-right: 2rem;
+}
+footer{
+    background: black;
+    text-align: center;
+    padding: 2rem 0;
+}
+footer .footer-logo{
+    margin-bottom: 2rem;
+}
+footer.footer-socials a{
+    margin-right: 1rem;
+}
+
+.copyright h6{
+    color: grey;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    
+}
